@@ -1,0 +1,13 @@
+{
+  "name": "gridsome-sanity-belongsto",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Gridsome site and Sanity studio example that creates Taxonomy pages",
+  "repository": "git@github.com:afenton90/gridsome-sanity-belongsto.git",
+  "author": "afenton90",
+  "license": "MIT",
+  "workspaces": [
+    "studio",
+    "web"
+  ]
+}
