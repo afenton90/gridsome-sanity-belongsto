@@ -1,28 +1,28 @@
-import { FaTheaterMasks } from "react-icons/fa";
+import { FaTheaterMasks } from 'react-icons/fa'
 
 export default {
-  name: "genre",
-  title: "Genre",
-  type: "document",
+  name: 'genre',
+  title: 'Genre',
+  type: 'document',
   icon: FaTheaterMasks,
   fields: [
     {
-      name: "title",
-      title: "Title",
-      type: "string",
+      name: 'title',
+      title: 'Title',
+      type: 'string',
     },
     {
-      name: "slug",
-      title: "Slug",
-      type: "slug",
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
       options: {
-        source: "title",
+        source: 'title',
       },
     },
     {
-      name: "overview",
-      title: "Overview",
-      type: "blockContent",
+      name: 'overview',
+      title: 'Overview',
+      type: 'blockContent',
     },
   ],
-};
+}

@@ -1,0 +1,14 @@
+{
+  "name": "web",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "gridsome": "^0.7.0",
+    "gridsome-source-sanity": "^1.0.5"
+  }
+}
