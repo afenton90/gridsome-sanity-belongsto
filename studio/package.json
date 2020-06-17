@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "package.json",
-  "author": "Alex Fenton <afenton90@gmail.com>",
+  "author": "afenton90",
   "license": "UNLICENSED",
   "scripts": {
     "start": "sanity start",

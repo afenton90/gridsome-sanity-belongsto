@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "gridsome": "^0.7.0",
-    "gridsome-source-sanity": "^1.0.5"
+    "gridsome-source-sanity": "^1.0.5",
+    "sanity-blocks-vue-component": "^0.1.0",
+    "vuetify": "^2.3.1"
   }
 }
