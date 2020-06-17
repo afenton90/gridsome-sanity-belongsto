@@ -3,7 +3,7 @@
     <v-main>
       <slot />
     </v-main>
-    <v-footer color="application">
+    <v-footer>
       <v-container class="text-center caption primary--text">
         <span>
           &copy; {{ new Date().getFullYear() }} Gridsome + Sanity.io Movie app by Neat Fox Digital

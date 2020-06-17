@@ -6,6 +6,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 const createMoviePages = require('./scripts/create-pages/movies')
+const createGenrePages = require('./scripts/create-pages/genre')
 
 module.exports = function(api) {
   api.loadSource(({ getCollection, store }) => {
@@ -34,6 +35,7 @@ module.exports = function(api) {
   })
 
   api.createPages(async ({ createPage, graphql }) => {
+    await createGenrePages({ createPage, graphql })
     await createMoviePages({ createPage, graphql })
   })
 }

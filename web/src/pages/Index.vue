@@ -1,30 +1,37 @@
 <template>
-  <Layout>
-    <v-card class="mx-auto" max-width="344">
-      <v-card-text>
-        <div>Word of the Day</div>
-        <p class="display-1 text--primary">
-          be•nev•o•lent
-        </p>
-        <p>adjective</p>
-        <div class="text--primary">
-          well meaning and kindly.<br />
-          "a benevolent smile"
-        </div>
-      </v-card-text>
-      <v-card-actions>
-        <v-btn text color="deep-purple accent-4">
-          Learn More
-        </v-btn>
-      </v-card-actions>
-    </v-card>
-  </Layout>
+  <genre-layout>
+    <movie-listing :movies="$page.allSanityMovie.edges" />
+  </genre-layout>
 </template>
 
 <script>
+import MovieListing from '../components/MovieListing.vue'
+
 export default {
+  components: { MovieListing },
   metaInfo: {
-    title: 'Hello, world!',
+    title: 'All Movies',
   },
 }
 </script>
+
+<page-query>
+query AllSanityMovieListing {
+  allSanityMovie {
+    edges {
+      node {
+        id
+        title
+        slug {
+          current
+        }
+        poster {
+          asset {
+            url
+          }
+        }
+      }
+    }
+  }
+}
+</page-query>
