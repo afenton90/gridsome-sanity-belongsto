@@ -6,7 +6,7 @@
 const { api: sanityApi } = require('../studio/sanity.json')
 
 module.exports = {
-  siteName: 'Gridsome',
+  siteName: 'Movie Listing',
   plugins: [
     {
       use: 'gridsome-source-sanity',
